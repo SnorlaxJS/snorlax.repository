@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 98vh;
+    width: 98vw;
+    background-image: linear-gradient(to right, rgb(255, 166, 0), rgb(255, 94, 0)40%, red);
+} 
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 445px;
+    text-align: center;
+}
+
+main > h1 {
+    color: white;
+    position: absolute;
+    top: -26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    font-size: 50px;
+}
+
+section#relogio, section#diadasemana, section#data {
+    background-color: rgb(13, 13, 41);
+    display: inline-block;
+    padding: 23px 3px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 4px black;
+    margin: 20px 0px 0px 0px;
+}
+
+section#relogio > #relatorio_hora, #relatorio_minutos, #relatorio_segundos, #relatorio_milesimos, section#diadasemana > #relatorio_diaSem, section#data > #relatorio_data {
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+    margin: 0px 4px;
+    box-shadow: 3px 3px 4px black;
+}
+
+section#tempo {
+    background-color: rgb(13, 13, 41);
+    display: inline-block;
+    padding: 9px 5px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 4px black;
+    margin: 20px 0px 0px 0px;
+}
+
+section#tempo > div{
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    margin: 0px 4px;
+    box-shadow: 3px 3px 4px black;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    margin: 15px 0px 0px 0px;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0px 6px ;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+footer > a > img {
+    width: 50px;
+    margin: 4px 0px 0px 0px ;
+}
