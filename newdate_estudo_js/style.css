@@ -11,6 +11,7 @@ body {
     height: 98vh;
     width: 98vw;
     background-image: linear-gradient(to right, rgb(255, 166, 0), rgb(255, 94, 0)40%, red);
+    height: 98vh;
 } 
 
 main {
@@ -26,7 +27,7 @@ main {
 main > h1 {
     color: white;
     position: absolute;
-    top: -26%;
+    top: -20%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
