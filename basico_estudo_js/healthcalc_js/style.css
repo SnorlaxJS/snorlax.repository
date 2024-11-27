@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor0: #107361;
+    --cor1: #1D7373;
+    --cor2: #0F5959;
+    --cor3: #0A3A40;
+    --cor4: #042326;
+}
+
+footer {
+    background-color: black;
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0px 6px ;
+
+    /*
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    */
+}
+
+footer > a#social > img {
+    width: 50px;
+    margin: 4px 0px 0px 0px ;
+}

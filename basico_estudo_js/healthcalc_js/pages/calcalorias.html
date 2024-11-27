@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Healthcalc - Calcular consumo de calorias</title>
+
+        <link rel="stylesheet" href="../style.css">
+        <script src="../scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Calcular consumo de calorias</h1>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Preencha campos abaixo:</legend>
+                    <fieldset>
+                        <legend>Selecione o sexo:</legend>
+                        <input type="radio" name="sexo" id="M" checked onclick="validacao_sexo_m_kcal">
+                        <label for="M">Masculino</label><br>
+                        <input type="radio" name="sexo" id="F" onclick="validacao_sexo_f_kcal">
+                        <label for="F">Feminino</label>
+                    </fieldset>
+                    <label for="peso">Digite o peso (kg): </label>
+                    <input type="number" name="peso" id="peso"><br>
+                    <label for="altura">Digite a altura (m): </label>
+                    <input type="number" name="altura" id="altura"><br>
+                    <label for="idade">Digite a idade: </label>
+                    <input type="number" name="idade" id="idade"><br>
+                    <input type="button" value="calcular" onclick="calc_calorias()">
+                    <input type="reset" value="Limpar" onclick="limpar()">
+                </fieldset>
+            </form>
+            <a id="voltar" href="index.html">Voltar</a>
+        </main>
+    </body>
+</html>

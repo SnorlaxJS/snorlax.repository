@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Healthcalc - Calcular percentual de gordura</title>
+
+        <link rel="stylesheet" href="../style.css">
+        <script src="../scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Calcular percentual de gordura</h1>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Preencha os campos abaixo: </legend>
+                    <fieldset>
+                        <legend>Selecione o sexo:</legend>
+                        <input type="radio" name="sexo" id="M" value="M" checked onclick="validacao_sexo_m()">
+                        <label for="M">Masculino</label><br>
+                        <input type="radio" name="sexo" id="F" value="F" onclick="validacao_sexo_f()">
+                        <label for="F">Feminino</label><br>
+                    </fieldset>
+                    <label for="cintura">Medida da cintura (cm):</label>
+                    <input type="number" name="cintura" id="cintura"><br>
+                    <label for="pescoco">Medida da circunferência da base do pescoço (cm): </label>
+                    <input type="number" name="pescoco" id="pescoco"><br>
+                    <label for="altura">Medida da altura (cm): </label>
+                    <input type="number" name="altura" id="altura"><br>
+                    <div id="input_quadril">
+                        <!--<label for="quadril">Medida da circunferência do quadril: </label>
+                        <input type="number" name="quadril" id="quadril">-->
+                    </div>
+                    <input type="button" value="Calcular" onclick="calcular_gordura()">
+                    <input type="reset" value="Limpar" onclick="limpar()">
+                </fieldset>
+            </form>
+            <span id="res"></span>
+            <a id="voltar" href="index.html">Voltar</a>
+        </main>
+    </body>
+</html>

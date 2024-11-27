@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Healthcalc - Calcular IMC</title>
+
+        <link rel="stylesheet" href="../style.css">
+        <script src="../scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Calcular IMC</h1>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Preencha os campos abaixo:</legend>
+                    <label for="peso">Digite o peso (kg):</label>
+                    <input type="number" name="peso" id="peso"><br>
+                    <label for="altura">Digite a altura (m):</label>
+                    <input type="number" name="altura" id="altura"><br>
+                    <input type="button" value="Calcular IMC" onclick="calcular_imc()">
+                    <input type="reset" value="Limpar" onclick="limpar()">
+                </fieldset>
+            </form>
+            Recomendado: <span id="res"></span><br>
+            <span id="complemento"></span><br>
+            <a id="voltar" href="index.html">Voltar</a>
+        </main>
+    </body>
+</html>

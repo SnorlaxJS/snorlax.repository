@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heathcalc - Calcular consumo diário de água</title>
+
+        <link rel="stylesheet" href="../style.css">
+        <script src="../scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Calcular consumo diário de água</h1>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Preencha os campos abaixo:</legend>
+                    <label for="peso">Digite o peso (kg): </label>
+                    <input type="number" name="peso" id="peso"><br>
+                    <input type="button" value="Calcular" onclick="calcular_agua()">
+                    <input type="reset" value="Limpar" onclick="limpar()">
+                </fieldset>
+            </form>
+            <p>Recomendado: </p><span id="res"></span><br>
+            <a id="Voltar" href="index.html">Voltar</a>
+        </main>
+    </body>
+</html>
