@@ -13,20 +13,19 @@ body {
     height: 98vh;
 }
 
-h1 {
+header > h1 {
     color: white;
     position: absolute;
-    top: 23%;
+    top: 7%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3em;
 }
 
-div#objeto1 {
-    background-color: rgb(48, 137, 172);
-    width: 325px;
-    height: 325px;
-    border-radius: 12px;
+main {
+    display: inline-block;
+    text-align: center;
+    width: 1100px;
 
     position: absolute;
     top: 50%;
@@ -34,13 +33,26 @@ div#objeto1 {
     transform: translate(-50%, -50%);
 }
 
-div#objeto2 {
+section {
+    display: inline-block;
+    margin: 15px;
+}
+
+div.objeto1 {
+    background-color: rgb(48, 137, 172);
+    width: 325px;
+    height: 325px;
+    border-radius: 12px;
+    position: relative;
+}
+
+div.objeto2 {
     background-color: rgb(0, 0, 0);
     width: 300px;
     height: 300px;
     border-radius: 6px;
     box-shadow: inset 1px 1px 7px black;
-
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,6 +66,7 @@ span#texto {
     transform: translate(-50%, -50%);
     font-size: 3em;
     color: white;
+    text-align: center;
 }
 
 footer {
@@ -65,7 +78,7 @@ footer {
     padding: 0px 6px ;
     
     position: absolute;
-    top: 75%;
+    top: 92.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     
