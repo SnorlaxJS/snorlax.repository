@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+:root {
+    --gradient: linear-gradient(to right, red, orange, yellow, blue, indigo, violet);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #212223;
+            background-image: 
+                linear-gradient(
+                    rgb(18, 59, 59) .5rem,
+                    transparent .5rem),
+                linear-gradient(
+                    90deg,
+                    rgb(18, 59, 59) .5rem,
+                    transparent .5rem);
+            background-size: 5rem 5rem;
+}
+
+h1 {
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    margin: 30px 0px 0px 0px;
+}
+
+header > h1, h2.subtitulo, section.representacao-cores, section.representacao-gradient, hgroup {
+    text-align: center;
+}
+
+h2.subtitulo {
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    margin: 40px 0px 10px 0px;
+}
+
+div#borda-colorida {
+    display: inline-block;
+    border-bottom: 7px solid white;
+    padding: 0px 30px;
+    border-image: var(--gradient) 1;
+}
+
+div.frame {
+    background-color: black;
+    border-radius: 6px;
+    display: inline-block;
+    position: relative;
+    width: 165px;
+    height: 165px;
+    margin: 5px;
+}
+
+span.texto {
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.padrao {
+    position: absolute;
+    top: 49.79%;
+    left: 49.79%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 3px;
+    color: white;
+    font-size: 2em;
+}
+
+/* Representação de cores no css3 */
+div#cor1 {
+    background-color: blue; /* Representação por nome padrão */
+}
+
+div#cor2 {
+    background-color: rgb(0,0,255); /* Representação RGB */
+}
+
+div#cor3 {
+    line-height: 25px;
+    background-color: hsl(240,100%,50%); /* Representação HSL */
+}
+
+div#cor4 {
+    background-color: #0000ff; /* Representação Hexadecimal */
+}
+
+/* Representação de cores com transparência no css3 */
+div#cor1-a {
+    background-color: rgba(0,0,255,0.5); /* Representação por RGBA */
+}
+
+div#cor2-a {
+    line-height: 25px;
+    background-color: hsla(240,100%,50%,0.5); /* Representação por HSLA */
+}
+
+div#cor3-a {
+    background-color: #0000ff80; /* Representação por Hexadecimal com transparência */
+}
+
+/* Representação transparente */
+div#cor1-t {
+    background-color: transparent;
+}
+
+/* Representação de mistura de cores*/
+div#cor1-cm {
+    background-color: #0000ff;
+}
+
+div#cor2-cm {
+    background-color: #ff0000;
+}
+
+div#cor3-cm {
+    background-color: color-mix(in hsl, hsl(240, 100%, 50%), hsl(0, 100%, 50%) 70%);
+}
+
+span#sinal-colormix {
+    font-size: 4em;
+    position: relative;
+    top: -64px;
+    
+}
+
+/* Representação gradiente linear */
+div#gradient1 {
+    background-image: linear-gradient(to right, #0000ff, #cfcffd);
+}
+
+div#gradient2 {
+    background-image: linear-gradient(90deg, #0000ff 50%, #cfcffd 50%);
+}
+
+div#gradient3 {
+    background-image: linear-gradient(45deg, #0000ff 50%, #cfcffd 50%);
+}
+
+div#gradient4 {
+    background-color: #0000ff;
+    background-image: linear-gradient(-45deg, transparent 75%, #cfcffd 75%), 
+    linear-gradient(45deg, transparent 75%, #cfcffd 75%), 
+    linear-gradient(135deg, transparent 75%, #cfcffd 75%), 
+    linear-gradient(-135deg, transparent 75%, #cfcffd 75%);
+}
+
+/* Representação gradiente radial */
+div#gradient1-r {
+    background-image: radial-gradient(circle, #0000ff, #cfcffd);
+}
+
+div#gradient2-r {
+    background-image: radial-gradient(circle, #0000ff 50%, #cfcffd 50%);
+}
+
+div#gradient3-r {
+    background-image: repeating-radial-gradient(#0000ff 50%, #cfcffd);
+}
+
+div#gradient4-r {
+    background-image: radial-gradient(closest-side at 30% 30%, #0000ff 50%, #cfcffd 50%);
+}
+
+div#gradient5-r {
+    background-image: radial-gradient(farthest-side at 70% 70%, #0000ff 50%, #cfcffd 50%);
+}
+
+/* Representação gradiente cônico */
+div#gradient1-c {
+    background-image: conic-gradient(#0000ff, #cfcffd, #0000ff);
+}
+
+div#gradient2-c {
+    background-image: conic-gradient(#0000ff, #cfcffd, #0000ff);
+    border-radius: 50%;
+}
+
+div#gradient3-c {
+    background-image: conic-gradient(#0000ff 0deg 90deg, #cfcffd 90deg 180deg, #0000ff 180deg 270deg, #cfcffd 270deg);
+}
+
+div#gradient4-c {
+    background-image: conic-gradient(#0000ff 0deg 90deg, #cfcffd 90deg 180deg, #0000ff 180deg 270deg, #cfcffd 270deg);
+    border-radius: 50%;
+}
+
+div#gradient5-c {
+    background-image: conic-gradient(from 45deg,#0000ff, #cfcffd);
+}
+
+div#gradient6-c {
+    background-image: conic-gradient(from 45deg,#0000ff, #cfcffd);
+    border-radius: 50%;
+}
+
+div#gradient7-c {
+    background-image: conic-gradient(at 65% 70%, #0000ff, #cfcffd);
+}
+
+div#gradient8-c {
+    background-image: conic-gradient(at 65% 70%, #0000ff, #cfcffd);
+    border-radius: 50%;
+}
+
+div#gradient9-c {
+    background-image: repeating-conic-gradient(#0000ff 10%, #cfcffd 20%);
+}
+
+div#gradient10-c {
+    background-image: repeating-conic-gradient(#0000ff 10%, #cfcffd 20%);
+    border-radius: 50%;
+}
+
+/* Representação de bandeiras com gradiente */
+div#gradient1-ex {
+    background-color: yellow;
+    background-image: linear-gradient(45deg, transparent 75%, green 75%),
+    linear-gradient(-45deg, transparent 75%, green 75%),
+    linear-gradient(135deg, transparent 75%, green 75%),
+    linear-gradient(-135deg, transparent 75%, green 75%),
+    radial-gradient(closest-side at 50% 50%, blue 50%, transparent 50%);
+}
+
+div#gradient2-ex {
+    background-color: white;
+    background-image: linear-gradient(to right, green 33%, transparent 33%),
+    linear-gradient(to left, red 33%, transparent 33%);
+}
+
+div#gradient3-ex {
+    background-color: red;
+    background-image: linear-gradient(to bottom, black 33.33%, transparent 33.33%),
+    linear-gradient(to top, yellow 33.33%, transparent 33.33%);
+}
+
+div#gradient4-ex {
+    background-color: white;
+    background-image: radial-gradient(circle, red 50%, transparent 50%);
+}
+
+div#gradient5-ex {
+    background-color: blue;
+    background-image: linear-gradient(to bottom, red 25%, transparent 25%),
+    linear-gradient(to top, red 25%, transparent 25%),
+    radial-gradient(circle, white 30%, transparent 30%);
+}
