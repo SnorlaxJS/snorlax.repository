@@ -132,7 +132,7 @@ div#cor1-t {
 
 /* Representação de mistura de cores*/
 div#cor1-cm {
-    background-color: var(--azul1);
+    background-color: #0000ff;
 }
 
 div#cor2-cm {
@@ -145,89 +145,89 @@ div#cor3-cm {
 
 /* Representação gradiente linear */
 div#gradient1 {
-    background-image: linear-gradient(to right, #0000ff, #cfcffd);
+    background-image: linear-gradient(to right, var(--azul1), var(--azul2));
 }
 
 div#gradient2 {
-    background-image: linear-gradient(90deg, #0000ff 50%, #cfcffd 50%);
+    background-image: linear-gradient(90deg, var(--azul1) 50%, var(--azul2) 50%);
 }
 
 div#gradient3 {
-    background-image: linear-gradient(45deg, #0000ff 50%, #cfcffd 50%);
+    background-image: linear-gradient(45deg, var(--azul1) 50%, var(--azul2) 50%);
 }
 
 div#gradient4 {
-    background-color: #0000ff;
-    background-image: linear-gradient(-45deg, transparent 75%, #cfcffd 75%), 
-    linear-gradient(45deg, transparent 75%, #cfcffd 75%), 
-    linear-gradient(135deg, transparent 75%, #cfcffd 75%), 
-    linear-gradient(-135deg, transparent 75%, #cfcffd 75%);
+    background-color: var(--azul1);
+    background-image: linear-gradient(-45deg, transparent 75%, var(--azul2) 75%), 
+    linear-gradient(45deg, transparent 75%, var(--azul2) 75%), 
+    linear-gradient(135deg, transparent 75%, var(--azul2) 75%), 
+    linear-gradient(-135deg, transparent 75%, var(--azul2) 75%);
 }
 
 /* Representação gradiente radial */
 div#gradient1-r {
-    background-image: radial-gradient(circle, #0000ff, #cfcffd);
+    background-image: radial-gradient(circle, var(--azul1), var(--azul2));
 }
 
 div#gradient2-r {
-    background-image: radial-gradient(circle, #0000ff 50%, #cfcffd 50%);
+    background-image: radial-gradient(circle, var(--azul1) 50%, var(--azul2) 50%);
 }
 
 div#gradient3-r {
-    background-image: repeating-radial-gradient(#0000ff 50%, #cfcffd);
+    background-image: repeating-radial-gradient(var(--azul1) 50%, var(--azul2));
 }
 
 div#gradient4-r {
-    background-image: radial-gradient(closest-side at 30% 30%, #0000ff 50%, #cfcffd 50%);
+    background-image: radial-gradient(closest-side at 30% 30%, var(--azul1) 50%, var(--azul2) 50%);
 }
 
 div#gradient5-r {
-    background-image: radial-gradient(farthest-side at 70% 70%, #0000ff 50%, #cfcffd 50%);
+    background-image: radial-gradient(farthest-side at 70% 70%, var(--azul1) 50%, var(--azul2) 50%);
 }
 
 /* Representação gradiente cônico */
 div#gradient1-c {
-    background-image: conic-gradient(#0000ff, #cfcffd, #0000ff);
+    background-image: conic-gradient(var(--azul1), var(--azul2), var(--azul1));
 }
 
 div#gradient2-c {
-    background-image: conic-gradient(#0000ff, #cfcffd, #0000ff);
+    background-image: conic-gradient(var(--azul1), var(--azul2), var(--azul1));
     border-radius: 50%;
 }
 
 div#gradient3-c {
-    background-image: conic-gradient(#0000ff 0deg 90deg, #cfcffd 90deg 180deg, #0000ff 180deg 270deg, #cfcffd 270deg);
+    background-image: conic-gradient(var(--azul1) 0deg 90deg, var(--azul2) 90deg 180deg, var(--azul1) 180deg 270deg, var(--azul2) 270deg);
 }
 
 div#gradient4-c {
-    background-image: conic-gradient(#0000ff 0deg 90deg, #cfcffd 90deg 180deg, #0000ff 180deg 270deg, #cfcffd 270deg);
+    background-image: conic-gradient(var(--azul1) 0deg 90deg, var(--azul2) 90deg 180deg, var(--azul1) 180deg 270deg, var(--azul2) 270deg);
     border-radius: 50%;
 }
 
 div#gradient5-c {
-    background-image: conic-gradient(from 45deg,#0000ff, #cfcffd);
+    background-image: conic-gradient(from 45deg,var(--azul1), var(--azul2));
 }
 
 div#gradient6-c {
-    background-image: conic-gradient(from 45deg,#0000ff, #cfcffd);
+    background-image: conic-gradient(from 45deg,var(--azul1), var(--azul2));
     border-radius: 50%;
 }
 
 div#gradient7-c {
-    background-image: conic-gradient(at 65% 70%, #0000ff, #cfcffd);
+    background-image: conic-gradient(at 65% 70%, var(--azul1), var(--azul2));
 }
 
 div#gradient8-c {
-    background-image: conic-gradient(at 65% 70%, #0000ff, #cfcffd);
+    background-image: conic-gradient(at 65% 70%, var(--azul1), var(--azul2));
     border-radius: 50%;
 }
 
 div#gradient9-c {
-    background-image: repeating-conic-gradient(#0000ff 10%, #cfcffd 20%);
+    background-image: repeating-conic-gradient(var(--azul1) 10%, var(--azul2) 20%);
 }
 
 div#gradient10-c {
-    background-image: repeating-conic-gradient(#0000ff 10%, #cfcffd 20%);
+    background-image: repeating-conic-gradient(var(--azul1) 10%, var(--azul2) 20%);
     border-radius: 50%;
 }
 
