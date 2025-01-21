@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Primary Meta Tags -->
+        <title>Formulário | Estudo HTML e CSS</title>
+        <meta name="title" content="Formulário | Estudo HTML e CSS" />
+        <meta name="description" content="Formulário feioso feito comHTML e CSS" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:title" content="Formulário | Estudo HTML e CSS" />
+        <meta property="og:description" content="Formulário feioso feito comHTML e CSS" />
+        <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:title" content="Formulário | Estudo HTML e CSS" />
+        <meta property="twitter:description" content="Formulário feioso feito comHTML e CSS" />
+        <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+        <link rel="stylesheet" href="assets/styles/styles.css" media="screen and (min-width: 780px)" />
+        <link rel="stylesheet" href="assets/styles/styles-mobile.css" media="screen and (max-width: 780px)" />
+        <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div id="base_div">
+            <div id="main-div" class="center">
+                <header>
+                    <h1>Preencha o Formulário abaixo:</h1>
+                </header>
+                <main>
+                    <form action="">
+                        <fieldset id="fieldset_nome">
+                            <legend>Nome</legend>
+                            <div id="div_nome">
+                                <label for="first_name">Primeiro Nome:</label>
+                                <input type="text" name="first_name" id="first_name" required /><br>
+                            </div>
+                            <div id="div_sobrenome">
+                                <label for="last_name">Sobrenome:</label>
+                                <input type="text" name="last_name" id="last_name" required />
+                            </div>
+                        </fieldset><br>
+                        <fieldset>
+                            <legend>Gênero</legend>
+                            <div id="genero">
+                                <span id="radio_m">
+                                    <input class="radio_style" type="radio" name="genero" id="M" required />
+                                    <label for="M">Masculino</label>
+                                </span>
+                                <input class="radio_style" type="radio" name="genero" id="F" required />
+                                <label for="F">Feminino</label>
+                            </div>
+                        </fieldset><br>
+                        <fieldset>
+                            <legend>Idade</legend>
+                            <div id="idade">
+                                <label for="data-nasc">Data de nascimento:</label>
+                                <input type="date" name="data-nasc" id="data-nasc" required />
+                            </div>
+                        </fieldset><br>
+                        <fieldset>
+                            <legend>E-mail</legend>
+                            <div id="email">
+                                <label for="email">Endereço de Email:</label>
+                                <input type="email" name="email" id="email" required />
+                            </div>
+                        </fieldset><br>
+                        <fieldset>
+                            <legend>Telefone</legend>
+                            <div id="telefone">
+                                <label for="num-tel">Nº de Telefone:</label>
+                                <input type="tel" name="num-tel" id="num-tel" required autocomplete="tel" />
+                            </div>
+                        </fieldset><br>
+                        <fieldset>
+                            <legend>Preferências</legend>
+                            <div id="lista">
+                                <ul id="lista_preferencia">
+                                    <li>
+                                        <input class="checkbox_style" type="checkbox" name="musica" id="musica" />
+                                        <label for="musica">Música</label><br>
+                                    </li>
+                                    <li>
+                                        <input class="checkbox_style" type="checkbox" name="jogos" id="jogos" />
+                                        <label for="jogos">Jogos</label><br>
+                                    </li>
+                                    <li>
+                                        <input class="checkbox_style" type="checkbox" name="esportes" id="esportes" />
+                                        <label for="esportes">Esportes</label><br>
+                                    </li>
+                                    <li>
+                                        <input class="checkbox_style" type="checkbox" name="pintura" id="pintura" />
+                                        <label for="pintura">Pintura</label><br>
+                                    </li>
+                                    <li>
+                                        <input class="checkbox_style" type="checkbox" name="danca" id="danca" />
+                                        <label for="danca">Dança</label><br>
+                                    </li>
+                                    <li>
+                                        <input class="checkbox_style" type="checkbox" name="teatro" id="teatro" />
+                                        <label for="teatro">Teatro</label><br>
+                                    </li>
+                                    <li>
+                                        <input class="checkbox_style" type="checkbox" name="fotografia" id="fotografia" />
+                                        <label for="fotografia">Fotografia</label><br>
+                                    </li>
+                                    <li>
+                                        <input class="checkbox_style" type="checkbox" name="poesia" id="poesia" />
+                                        <label for="poesia">Poesia</label><br>
+                                    </li>
+                                    <li>
+                                        <input class="checkbox_style" type="checkbox" name="cinema" id="cinema" />
+                                        <label for="cinema">Cinema</label><br>
+                                    </li>
+                                    <li>
+                                        <input class="checkbox_style" type="checkbox" name="programacao" id="programacao" />
+                                        <label for="programacao">Progamação</label><br>
+                                    </li>
+                                    <li>
+                                        <input class="checkbox_style" type="checkbox" name="design" id="design" />
+                                        <label for="design">Design</label><br>
+                                    </li>
+                                    <li>
+                                        <input class="checkbox_style" type="checkbox" name="automobilismo" id="automobilismo" />
+                                        <label for="automobilismo">Automobilismo</label><br>
+                                    </li>
+                                    <li>
+                                        <input class="checkbox_style" type="checkbox" name="art-cientificos" id="art-cientificos" />
+                                        <label for="art-cientificos">Art. Científicos</label><br>
+                                    </li>
+                                    <li>
+                                        <input class="checkbox_style" type="checkbox" name="literatura" id="literatura" />
+                                        <label for="literatura">Literatura</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset><br>
+                        <fieldset id="fieldset_senha">
+                            <legend>Senha</legend>
+                            <div id="div_senha">
+                                <label for="senha">Digitar Senha:</label>
+                                <input type="password" name="senha" id="senha" required /><br>
+                            </div>
+                            <div id="div_confirmsenha">
+                                <label for="confirm-senha">Confirmar Senha: </label>
+                                <input type="password" name="confirm-senha" id="confirm-senha" required />
+                            </div>
+                        </fieldset><br>
+                        <input type="reset" value="Limpar" class="botao" /><input type="submit" value="Enviar" class="botao" />
+                    </form>
+                </main>
+                <footer>
+                    <div id="rodape">
+                        <a href="https://www.instagram.com/snorlax.js/" target="_blank"><img src="assets/imgs/instagram-icon.png" alt="Instagram logo"></a>
+                        <a href="https://github.com/SnorlaxJS/" target="_blank"><img src="assets/imgs/github-icon.png" alt="Instagram logo"></a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

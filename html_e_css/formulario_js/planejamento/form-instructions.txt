@@ -1,0 +1,43 @@
+OBS: Implementar o conceito de mobile first.
+
+FORMULÁRIO:
+
+--- NOME --- [input type="text"] @
+-> Nome: 
+-> Sobrenome:
+
+--- GÊNERO --- [input type="radio"] @
+-> []Masculino []Feminino 
+
+--- DATA DE NASCIMENTO --- [input type="date"] @ 
+-> Data de Nascimento:
+
+--- EMAIL --- [input type="email"] @
+-> Email:
+
+--- TELEFONE --- [input type="tel"] @ 
+-> Nº de Telefone:
+
+--- INTERESSES --- [input type="checkbox"] @
+1 -> Música
+2 -> Jogos
+3 -> Esporte
+4 -> Pintura
+5 -> Dança
+6 -> Teatro
+7 -> Fotografia
+8 -> Poesia
+9 -> Cinema
+10 -> Programação
+11 -> Design
+12 -> Automobilismo
+13 -> Artigos Científicos
+14 -> Literatura
+
+--- SENHA --- [input type="password"] @
+-> Senha:
+-> Confirme a Senha:
+
+--- BOTÕES --- [input type="reset"] & [input type="submit"] @
+-> Limpar
+-> Enviar

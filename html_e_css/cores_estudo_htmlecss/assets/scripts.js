@@ -145,3 +145,4 @@ function click_gradient4_ex() {
 function click_gradient5_ex() {
     window.alert("Código CSS: -----> background-color: blue; | background-image: linear-gradient(to bottom, red 25%, transparent 25%), linear-gradient(to top, red 25%, transparent 25%), radial-gradient(circle, white 30%, transparent 30%);");
 }
+

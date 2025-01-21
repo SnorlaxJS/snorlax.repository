@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nerko+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor0: #000000;
+    --cor1: #060423;
+    --cor2: #181638;
+    --cor3: #888899;
+    --cor4: #ffffff;
+}
+
+/* ===================================================================== */
+
+body {
+    height: 99.9vh;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+}
+
+div#main-div {
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 39px;
+    color: var(--cor3);
+    margin: 10px 0px 5px 0px ;
+    text-shadow: 3px 3px 5px black;
+    line-height: 40px;
+}
+
+main {
+    background-color: var(--cor0);
+    display: inline-block;
+    width: 380px;
+    margin: 0px auto 0px auto;
+    border: 5px solid var(--cor3);
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px black;
+}
+
+fieldset {
+    display: inline-block;
+    padding: 0px 8px 12px 8px;
+    border: 3px solid var(--cor3);
+    border-radius: 15px;
+    margin-top: 4px;
+}
+
+#fieldset_nome > #div_nome, #fieldset_senha > #div_senha{
+    position: relative;
+    left: 13px;
+}
+
+legend {
+    border: 3px solid var(--cor3);
+    border-radius: 20px;
+    padding: 0px 10px ;
+    font-size: 18px;
+    color: var(--cor4);
+}
+
+input {
+    background-color: transparent;
+    border: 1.5px solid var(--cor4);
+    border-radius: 9px;
+    color: var(--cor4);
+    text-align: center;
+}
+
+label {
+    color: var(--cor3); 
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.label_relat {
+    color: var(--cor4);
+    line-height: 28px;
+}
+
+#radio_m {
+    margin-right: 10px;
+}
+
+.radio_style {
+    position: relative;
+    top: 2px;
+    appearance: none;
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--cor4);
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.radio_style::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border-radius: 50%;
+    background-color: var(--cor4);
+}
+
+.radio_style:checked::after {
+    width: 5px;
+    height: 5px;
+}
+
+ul#lista_preferencia {
+    list-style-type: none;
+    columns: 2;
+}
+
+ul#lista_preferencia > li {
+    text-align: left;
+}
+
+.botao {
+    background-color: transparent;
+    border: 2px solid var(--cor4);
+    border-radius: 20px;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: var(--cor4);
+    padding: 0px 10px;
+    margin: 7px 8px;
+}
+
+.botao:hover, input[type="text"]:hover, input[type="password"]:hover, input[type="date"]:hover, input[type="email"]:hover, input[type="tel"]:hover{
+    background-color: rgb(119, 119, 119);
+    color: rgb(31, 31, 31);
+    transition-duration: 0.5s;
+}
+
+footer {
+    text-align: center;
+}
+
+div#rodape {
+    background-color: black;
+    margin: 12px 0px;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0px 6px;
+    box-shadow: 3px 3px 5px black;
+}
+
+div#rodape > a > img {
+    width: 50px;
+    margin: 4px 0px 0px 0px ;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#fieldset_nome > #div_nome {
+    position: relative;
+    left: 3px;
+    top: 2px;
+}
+
+#fieldset_nome > #div_sobrenome {
+    position: relative;
+    left: 16px;
+    top: 4px;
+}
+
+div#genero, div#idade, div#email, div#telefone, div#lista, div#div_confirmsenha {
+    position: relative;
+    top: 5px;
+}
+
+div#div_senha {
+    position: relative;
+    left: 16px;
+    top: 3px;
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /planejamento/
+Disallow: /index.html
