@@ -4,4 +4,4 @@
 ## Projetos postados:
 * newdate_estudos_js: [https://coresestudohtmlecss.vercel.app/](https://coresestudohtmlecss.vercel.app/)
 * cores_estudo_htmlecss: [https://coresestudohtmlecss.vercel.app/](https://coresestudohtmlecss.vercel.app/)
-* formulario_htmlecss:
+* formulario_htmlecss: -> OBS: Problemas Firefox
